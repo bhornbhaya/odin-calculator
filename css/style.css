@@ -1,0 +1,403 @@
+/*
+*Theme 1
+*/
+/*
+*Theme 2 
+*/
+/*
+*Theme 3 
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  line-height: 1.6;
+  font-size: 3.2rem;
+  background-color: #3a4764;
+}
+
+.light-mode {
+  background-color: #e6e6e6;
+}
+
+.purple-mode {
+  background-color: #160628;
+}
+
+.calc {
+  width: 34rem;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 14vh minmax(13vh, auto) 66vh;
+      grid-template-rows: 14vh minmax(13vh, auto) 66vh;
+  grid-gap: 2rem;
+}
+
+@media only screen and (min-width: 60em) {
+  .calc {
+    width: 44rem;
+  }
+}
+
+.calc__header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 3.5rem;
+  background-color: #3a4764;
+  color: white;
+  font-weight: 700;
+  position: relative;
+}
+
+@media only screen and (min-width: 60em) {
+  .calc__header {
+    margin-top: 5rem;
+  }
+}
+
+.calc__header__theme {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 2.5rem;
+}
+
+@media only screen and (min-width: 60em) {
+  .calc__header__theme {
+    left: 6.5rem;
+  }
+}
+
+.calc__header__upper-text {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  position: relative;
+  left: 9.15rem;
+  bottom: 2.5rem;
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 60em) {
+  .calc__header__upper-text {
+    left: 14.15rem;
+  }
+}
+
+.calc__header__upper-text__num {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  display: inline-block;
+  font-size: 1rem;
+  width: 1.9rem;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.calc__header__outer-container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  position: relative;
+}
+
+.calc__header__btn-container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  background-color: #232c43;
+  width: 8.25rem;
+  height: 2.5rem;
+  border-radius: 10rem;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+}
+
+.calc__header__btn-container.btn-container--light {
+  background-color: #d1cccc;
+}
+
+.calc__header__btn-container.btn-container--purple {
+  background-color: #1d0934;
+}
+
+.calc__header__red-btn {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 10rem;
+  background-color: #d03f2f;
+  border-radius: 10rem;
+  top: 0.4rem;
+  left: 0.6rem;
+}
+
+.calc__header__red-btn.blue--btn {
+  background-color: #00e0d1;
+}
+
+.calc__header__red-btn.btn--orange {
+  background-color: #d03f2f;
+}
+
+.calc__header__red-btn.move-right-1 {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transform: translateX(0rem);
+          transform: translateX(0rem);
+}
+
+.calc__header__red-btn.move-right-2 {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transform: translateX(2.63rem);
+          transform: translateX(2.63rem);
+}
+
+.calc__header__red-btn.move-right-3 {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transform: translateX(5.45rem);
+          transform: translateX(5.45rem);
+}
+
+.calc__header.light-mode {
+  background-color: #e6e6e6;
+  color: #35352c;
+}
+
+.calc__header.header--purple {
+  background-color: #160628;
+  color: #ffe53d;
+}
+
+.calc__screen {
+  background-color: #182034;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 700;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.calc__screen.screen--light {
+  background-color: #ededed;
+  color: #35352c;
+}
+
+.calc__screen.screen--purple {
+  background-color: #1d0934;
+  color: #ffe53d;
+}
+
+@media only screen and (min-width: 21.25em) {
+  .calc__outer-box {
+    background-color: #232c43;
+    border-radius: 1rem;
+    width: 34rem;
+    height: 42rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .calc__outer-box {
+    width: 44rem;
+    height: 38rem;
+  }
+}
+
+.calc__outer-box.outer-box--light {
+  background-color: #d1cccc;
+}
+
+.calc__outer-box.out-box--purple {
+  background-color: #1d0934;
+}
+
+@media only screen and (min-width: 21.25em) {
+  .calc__box {
+    background-color: #232c43;
+    width: 30rem;
+    height: 38rem;
+    margin: 2rem auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+    row-gap: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .calc__box {
+    width: 40rem;
+    height: 34rem;
+  }
+}
+
+.calc__box__button__del {
+  color: white;
+  background-color: #637097;
+  -webkit-box-shadow: 0 0.35rem #404e72;
+          box-shadow: 0 0.35rem #404e72;
+  font-size: 1.75rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.calc__box__button__del.del--light {
+  background-color: #377f86;
+  -webkit-box-shadow: 0 0.35rem #1b5f65;
+          box-shadow: 0 0.35rem #1b5f65;
+}
+
+.calc__box__button__del.del--purple {
+  background-color: #58077d;
+  -webkit-box-shadow: 0 0.35rem #bc15f4;
+          box-shadow: 0 0.35rem #bc15f4;
+}
+
+.calc__box__button__num {
+  font-size: 3.2rem;
+  font-family: "Spartan", sans-serif;
+  color: #444b5a;
+  background-color: #eae3dc;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.35rem #b4a597;
+          box-shadow: 0 0.35rem #b4a597;
+  border: none;
+}
+
+.calc__box__button__num.num--light {
+  background-color: #e5e4e1;
+  color: #35352c;
+  -webkit-box-shadow: 0 0.35rem #a69d91;
+          box-shadow: 0 0.35rem #a69d91;
+}
+
+.calc__box__button__num.num--purple {
+  background-color: #341c4f;
+  color: #ffe53d;
+  -webkit-box-shadow: 0 0.35rem #871c9c;
+          box-shadow: 0 0.35rem #871c9c;
+}
+
+.calc__box__button__reset {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  font-size: 3.2rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  background-color: #637097;
+  -webkit-box-shadow: 0 0.35rem #404e72;
+          box-shadow: 0 0.35rem #404e72;
+  font-size: 1.75rem;
+}
+
+.calc__box__button__reset.reset--light {
+  background-color: #377f86;
+  -webkit-box-shadow: 0 0.35rem #1b5f65;
+          box-shadow: 0 0.35rem #1b5f65;
+}
+
+.calc__box__button__reset.reset--purple {
+  background-color: #58077d;
+  -webkit-box-shadow: 0 0.35rem #bc15f4;
+          box-shadow: 0 0.35rem #bc15f4;
+}
+
+.calc__box__button__equal {
+  font-size: 1.6rem;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+  background-color: #d03f2f;
+  color: white;
+  -webkit-box-shadow: 0 0.35rem #93261a;
+          box-shadow: 0 0.35rem #93261a;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.calc__box__button__equal.equal--light {
+  background-color: #ca5502;
+  -webkit-box-shadow: 0 0.35rem #893901;
+          box-shadow: 0 0.35rem #893901;
+}
+
+.calc__box__button__equal.equal--purple {
+  background-color: #00e0d1;
+  -webkit-box-shadow: 0 0.35rem #6cf9f2;
+          box-shadow: 0 0.35rem #6cf9f2;
+  color: #1b2428;
+}
+
+.calc__box.box--light {
+  background-color: #d1cccc;
+}
+
+.calc__box.box--purple {
+  background-color: #1d0934;
+}
+
+.calc__box > button:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}

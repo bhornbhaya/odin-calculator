@@ -1,0 +1,98 @@
+/*
+*Theme 1
+*/
+//background
+$color-main-bg: hsl(222, 26%, 31%);
+$color-toggle-keypad-bg: hsl(223, 31%, 20%);
+$color-screen-bg: hsl(224, 36%, 15%);
+
+//keys
+$color-blue-key-bg: hsl(225, 21%, 49%);
+$color-blue-key-shadow: hsl(224, 28%, 35%);
+
+$color-red-key-toggle-bg: hsl(6, 63%, 50%);
+$color-red-key-shadow: hsl(6, 70%, 34%);
+
+$color-grey-key-bg: hsl(30, 25%, 89%);
+$color-orange-key-shadow: hsl(28, 16%, 65%);
+
+//text
+$color-dark-blue-text: hsl(221, 14%, 31%);
+$color-white-text: hsl(0, 0, 100%);
+
+/*
+*Theme 2 
+*/
+
+//Backgrounds
+$color-2-main-bg: hsl(0, 0%, 90%);
+$color-2-toggle-keypad-bg: hsl(0, 5%, 81%);
+$color-2-screen-bg: hsl(0, 0%, 93%);
+
+//keys
+$color-2-key-bg-cyan: hsl(185, 42%, 37%);
+$color-2-key-shadow-cyan: hsl(185, 58%, 25%);
+
+$color-2-key-bg-toggle: hsl(25, 98%, 40%);
+$color-2-key-shadow: hsl(25, 99%, 27%);
+
+$color-2-key-bg-yellow: hsl(45, 7%, 89%);
+$color-2-key-shadow-orange: hsl(35, 11%, 61%);
+
+//text
+$color-2-dark-yellow: hsl(60, 10%, 19%);
+$color-2-dark-white: hsl(0, 0, 100%);
+
+/*
+*Theme 3 
+*/
+//background
+$color-3-main-bg: hsl(268, 75%, 9%);
+$color-3-toggle-keypad-screen-bg: hsl(268, 71%, 12%);
+
+//keys
+$color-3-key-bg-light: hsl(281, 89%, 26%);
+$color-3-key-shadow-light: hsl(285, 91%, 52%);
+
+$color-3-key-bg-toggle: hsl(176, 100%, 44%);
+$color-3-key-shadow: hsl(177, 92%, 70%);
+
+$color-3-key-bg-dark: hsl(268, 47%, 21%);
+$color-3-key-shadow-magenta: hsl(290, 70%, 36%);
+
+//text
+$color-3-yellow: hsl(52, 100%, 62%);
+$color-3-blue: hsl(198, 20%, 13%);
+$color-3-white: hsl(0, 0, 100%);
+
+//Breakpoint
+$bp-mobile: 21.25em; //340px
+$bp-desktop: 60em; //960px
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  line-height: 1.6;
+  font-size: 3.2rem;
+  background-color: $color-main-bg;
+}
+
+.light-mode {
+  background-color: $color-2-main-bg;
+}
+
+.purple-mode {
+  background-color: $color-3-main-bg;
+}

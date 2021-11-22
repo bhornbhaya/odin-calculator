@@ -1,0 +1,10 @@
+.calc {
+  width: 34rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 14vh minmax(13vh, auto) 66vh;
+  grid-gap: 2rem;
+  @media only screen and (min-width: $bp-desktop) {
+    width: 44rem;
+  }
+}

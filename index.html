@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="calc">
+
+        <div class="calc__header">
+            <span>calc</span>
+
+            <div class="calc__header__outer-container">
+                <div class="calc__header__btn-container">
+                    <div class="calc__header__red-btn"></div>
+                </div>
+
+                <div class="calc__header__upper-text">
+                    <div class="calc__header__upper-text__num" onclick="changeToDefault()">1</div>
+                    <div class="calc__header__upper-text__num" onclick="changeToLight()">2</div>
+                    <div class="calc__header__upper-text__num" onclick="changeToPurple()">3</div>
+                </div>
+
+
+            </div>
+
+            <span class='calc__header__theme'>THEME</span>
+
+        </div>
+
+        <div class="calc__screen">
+            <div data-previous-operand class="calc__screen__previous-operand"></div>
+            <div data-current-operand class='calc__screen__current-operand'></div>
+
+        </div>
+
+        <div class="calc__outer-box">
+            <div class="calc__box">
+                <button data-number class="calc__box__button__num">7</button>
+                <button data-number class="calc__box__button__num">8</button>
+                <button data-number class="calc__box__button__num">9</button>
+                <button data-delete class="calc__box__button__del">DEL</button>
+                <button data-number class="calc__box__button__num">4</button>
+                <button data-number class="calc__box__button__num">5</button>
+                <button data-number class="calc__box__button__num">6</button>
+                <button data-operation class="calc__box__button__num">+</button>
+                <button data-number class="calc__box__button__num">1</button>
+                <button data-number class="calc__box__button__num">2</button>
+                <button data-number class="calc__box__button__num">3</button>
+                <button data-operation class="calc__box__button__num">-</button>
+                <button data-number class="calc__box__button__num">.</button>
+                <button data-number class="calc__box__button__num">0</button>
+                <button data-operation class="calc__box__button__num">/</button>
+                <button data-operation class="calc__box__button__num">x</button>
+                <button data-all-clear class="calc__box__button__reset">RESET</button>
+                <button data-equals class="calc__box__button__equal">=</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
