@@ -25,9 +25,7 @@
 
 ### Mobile Version
 
-![Screenshot](img/screenshot3.png)
-![Screenshot](img/screenshot2.png)
-![Screenshot](img/screenshot4.png)
+![Screenshot](img/screenshot3.png)![Screenshot](img/screenshot2.png)![Screenshot](img/screenshot4.png)
 
 ## My process
 
